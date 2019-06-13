@@ -1,0 +1,204 @@
+html {
+    height: 100%;
+}
+body {
+    background: linear-gradient(to right, #192b43 0%,#182a42 8%,#1d4267 15%,#182c44 35%,#182c44 50%,#182c44 65%,#1d4267 85%,#182a42 92%,#192b43 100%);
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+img {
+    max-height: 300px;
+}
+
+p {
+    font-weight: 300;
+}
+
+div.wrapper {
+    margin: 0px 15vw 0px 15vw;
+    background-color: black;
+}
+
+div.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    padding: 20px;
+    text-align: center;
+}
+
+div.title h1 {
+    margin: 0;
+}
+
+div.title p {
+    margin-top: 3px;
+    color: #00afec
+}
+
+div.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.fields input {
+    display: block;
+    margin-bottom: 10px;
+    height: 30px;
+    width: 200px;
+    border-radius: 2px;
+    border: none;
+    padding-left: 10px;
+    color: #464646
+}
+
+button {
+    border: 1px solid #c0c2c4;
+    border-radius: 3px;
+    transition: .3s all;
+    height: 29px;
+}
+
+button:hover {
+    border: 1px solid #00afec;
+    cursor: pointer;
+}
+
+input.btn {
+    height: 29px;
+    padding: 0 8px 0 8px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #c0c2c4;
+    border-radius: 3px;
+    transition: .3s all;
+}
+input.btn:hover {
+    border: 1px solid #00afec;
+    cursor: pointer;
+}
+
+input.btn:active {
+    background: #00afec;
+}
+
+input.loginbtn {
+    display: block;
+    margin-bottom: 10px;
+    height: 30px;
+    width: 211px;
+    border-radius: 2px;
+    border: 1px solid #00afec;
+    padding-left: 10px;
+    background: 0;
+    color: white;
+    transition: .5s all;
+}
+
+input.loginbtn:hover {
+    cursor: pointer;
+    border-radius: 2px;
+    background: #00afec;
+    transition: .5s all;
+}
+
+div.editprofile form input[type=password] {
+    width: 195px;
+    border-radius: 2px;
+    border: 1px solid #c0c2c4;
+    height: 26px;
+    padding-left: 10px;
+
+}
+
+div.editprofile form input[type=password]:focus {
+    border: 1px solid #00afec;
+}
+
+div.dashboard {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    height: 100vh;
+}
+
+div.dashboard div:nth-child(2) {
+    padding: 20px;
+    background-color: #e1e1e1;
+    grid-column: span 4;
+    color: black;
+}
+
+div.sidebar {
+    background-color: #132133;
+    grid-column: 1;
+}
+
+div.sidebar ul li a {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    color: white;
+    transition: all 0.5s;
+
+}
+
+div.sidebar ul li a:hover {
+    text-decoration-color: #00afec;
+    /* border-bottom: #00afec solid 2px; */
+    transition: all 0.5s;
+}
+
+div.sidebar ul {
+    list-style: none;
+}
+
+div.sidebar ul li {
+    margin: 30px 0px;
+}
+
+div.logout {
+    display: flex;
+    justify-content: right;
+}
+
+div.news article h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+div.news article h3 {
+    text-align: center;
+    margin: 0 0 0 0;
+    color: #1a5d70;
+}
+
+div.news a {
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+div.news article span {
+    float: right;
+}
+
+div.cards article {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    line-height: 1.4em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+div.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+}
+

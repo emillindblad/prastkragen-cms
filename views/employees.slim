@@ -1,0 +1,23 @@
+.employees
+    h1 Personal
+    button
+        a href="/newemployee" Ny personalprofil    
+    .cards
+        -employees.each do |element|
+            article.employee
+                .controls
+                    a href="/editemployee/#{element[:Id]}"
+                        button
+                            i.material-icons edit
+                    span 
+                        form action="/editemployee/#{element[:Id]}/delete" method="POST"
+                            button type="submit" value=""
+                                i.material-icons delete
+                .profile-img
+                    img src="/img/#{element[:Path]}"
+                .info
+                    p.FirstName = element[:FirstName]
+                    p.LastName = element[:LastName]
+                    p.Email = element[:Email]
+                    p.Phone = element[:Phone]
+                    p.Info = element[:Info]
