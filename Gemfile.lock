@@ -5,7 +5,7 @@ GEM
     byebug (11.0.1)
     mustermann (1.0.3)
     pg (1.1.4)
-    rack (2.0.7)
+    rack (2.0.8)
     rack-protection (2.0.5)
       rack
     sequel (5.21.0)
